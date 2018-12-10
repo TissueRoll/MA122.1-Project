@@ -1,0 +1,81 @@
+\documentclass[a4paper, 11pt, english]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage[american, siunitx]{circuitikz}
+\usepackage{tikz-timing}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{ref.bib}
+% \usepackage{etoolbox}
+% \apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
+\lstset
+{
+  language = {},
+  basicstyle = \scriptsize,
+  numbers = left,
+  stepnumber = 1,
+  showstringspaces = false,
+  frame = single,
+  tabsize = 1,
+  breaklines = true,
+  breakatwhitespace = false,
+}
+\pagestyle{fancy}
+\lhead{Christopher William S. Dizon \& Carlo M Acosta\\CS 152B B}
+\rhead{Lab\#12\\Arithmetic Logic Unit}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\renewcommand\qedsymbol{QED}
+% \renewcommand\qedsymbol{$\blacksquare$}
+%from external sources
+%--------------------------------------------------------------------------------------
+%https://tex.stackexchange.com/questions/235118/making-a-thicker-cdot-for-dot-product-that-is-thinner-than-bullet/235120 (Manuel)
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+%--------------------------------------------------------------------------------------
+
+\begin{document}
+\section{Introduction}
+% intro to neural networks
+% provide pictures
+% example to put in picture
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=12cm]{filename (in the same folder dapat)}
+%   \caption{caption here}
+%   \label{fig:label of the figure}
+% \end{figure}
+Neural networks have a lot of applications in today's world. They have applications in character recognition, image compression, stock market prediction, medicine, and much more \cite{dk1}. They provide us with a way to compute for more complicated things. % pls edit
+\par When neural networks are mentioned, people tend to panic as they think it is a very complicated topic. However, it is not incredibly complicated. For people with a background in linear algebra, neural networks become something more tangible, because it is just applying concepts in linear algebra.
+\par For this topic, we will discuss a basic kind of neural network. It is not too complicated (like the modern versions of neural networks) and it is easy to follow.
+
+\section{Preliminaries}
+% activation functions/sigmoid
+% gradient descent
+
+\section{Discussion}
+% how is linear alg used
+
+\section{Results}
+% results of code?
+
+\section{Conclusion}
+% summarize everything
+
+\newpage
+\printbibliography
+\end{document}
+
+% WARNING: LIST OF NOT DONE
+% renew screenshots
