@@ -28,8 +28,8 @@
   breakatwhitespace = false,
 }
 \pagestyle{fancy}
-\lhead{Christopher William S. Dizon \& Carlo M Acosta\\CS 152B B}
-\rhead{Lab\#12\\Arithmetic Logic Unit}
+\lhead{Christopher Dizon \& Nate Kibanoff \& Sir Heinrich Tan\\CS 152B B}
+\rhead{MA122.1 Project\\Neural Networks}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}{Corollary}
@@ -56,16 +56,43 @@
 %   \caption{caption here}
 %   \label{fig:label of the figure}
 % \end{figure}
-Neural networks have a lot of applications in today's world. They have applications in character recognition, image compression, stock market prediction, medicine, and much more \cite{dk1}. They provide us with a way to compute for more complicated things. % pls edit
+Neural networks have a lot of applications in today's world. They have applications in character recognition, image compression, stock market prediction, medicine, and much more \cite{dk1}. They provide us with a way to compute for more complicated things. % pls edit with more pictures
 \par When neural networks are mentioned, people tend to panic as they think it is a very complicated topic. However, it is not incredibly complicated. For people with a background in linear algebra, neural networks become something more tangible, because it is just applying concepts in linear algebra.
 \par For this topic, we will discuss a basic kind of neural network. It is not too complicated (like the modern versions of neural networks) and it is easy to follow.
 
 \section{Preliminaries}
 % activation functions/sigmoid
+\subsection{Activation Function}
+\par The activation function is simply a function that squeezes numbers to fit into a certain range. In this case, we try to fit numbers in the range $[0,1]$. There are many kinds of activation functions, and the function we use for this topic is the sigmoid function. The sigmoid function is defined as
+\[\mathrm{sigmoid}(x) = \frac{1}{1+e^{-x}}.\]
+
 % gradient descent
+\subsection{Gradient Descent}
+\par Gradient descent is a method to get the minimum of a function. % lmao idk na
+
+% include bias?
+
+\subsection{Definition of Terms}
+\par Before discussing how the neural network works, we must define the following terms:
+\begin{description}
+    \item[Neurons] \hfill \\ These are represented as the nodes in the neural network.
+    \item[Layers] \hfill \\ These are the vertical arrangements of neurons in the neural network.
+    \item[Weights] \hfill \\ These are represented as the edges  connecting one neuron to the all neurons in the next layer.
+\end{description}
 
 \section{Discussion}
 % how is linear alg used
+% forward phase
+
+% checking for error
+
+% propagate the error backwards (backward phase)
+
+% training the network
+
+% arriving at an answer
+
+% sample
 
 \section{Results}
 % results of code?
@@ -76,6 +103,3 @@ Neural networks have a lot of applications in today's world. They have applicati
 \newpage
 \printbibliography
 \end{document}
-
-% WARNING: LIST OF NOT DONE
-% renew screenshots
