@@ -1,3 +1,3 @@
-pdflatex proj.tex
-biber proj
-pdflatex proj.tex
+pdflatex proj_temp.tex
+biber proj_temp
+pdflatex proj_temp.tex
